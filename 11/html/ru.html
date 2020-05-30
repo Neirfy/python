@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="initial-scale=1 user-scaleable=1">
+	<meta http-equiv="Content-Style-Type" content="text/css" charset="utf-8">
+	<link rel="icon" href="favicon.ico" type="image/vnd.microsoft.ic">
+<style>
+@import "main.css";
+</style>
+	<title>
+		RIICHImonster
+	</title>
+</head>
+	<body>
+		<div id="well" class="show">
+		<div class="sign">
+		<span class="fast-flicker">w</span>
+		el<span class="flicker">l</span>
+		co<span class="fast-flicker">m</span>e</div>
+		</div>
+
+		<div id="lang" class="lng-bar show">
+			<a id="ru" class="lng" href="en.html">🇺🇸</a>
+			<a id="en" class="lng" href="ru.html">🇷🇺</a>
+		</div>
+
+		<div id="head">
+		<fieldset class="fix-bar">
+			<input id="youLogin" class="in-bar log show" type="text" placeholder="Логин" maxlength="10">
+			<input id="youPassword" class="in-bar pass show" type="password" placeholder="Пароль" maxlength="10">
+			<input id="logInM" class="login show" type="button" value="Войти">
+			<input id="logOutM" class="logout hide" type="button" value="Выйти">
+		</fieldset>
+		</div>
+		
+		<header id="tableStatus" class="lobbyH hide">
+			<div id="enableTable"  class="lobby hide">Доступные столы:</div>
+			<div id="nowTable" class="table-now hide">Стол:#tbl</div>		
+			<div id="nowRound" class="round-now hide">3</div>		
+		</header>
+		
+		<div id="tbl" class="listTables hide"></div>
+		
+		<div id="playerPlace0" class="hide">
+			<fieldset id="plField0" class="player">
+				<div id="playerWind0"></div>
+				<div id="playerName0"></div>
+				<div id="playerScore0"></div>
+			</fieldset>
+		</div>
+			
+		<div id="playerPlace1" class="hide">
+			<fieldset id="plField1" class="player">
+				<div id="playerWind1"></div>
+				<div id="playerName1"></div>
+				<div id="playerScore1"></div>
+			</fieldset>
+		</div>
+			
+		<div id="playerPlace2" class="hide">
+			<fieldset id="plField2" class="player">
+				<div id="playerWind2"></div>
+				<div id="playerName2"></div>
+				<div id="playerScore2"></div>		
+			</fieldset>
+		</div>
+			
+		<div id="playerPlace3" class="hide">
+			<fieldset id="plField3" class="player">
+				<div id="playerWind3"></div>
+				<div id="playerName3"></div>
+				<div id="playerScore3"></div>
+			</fieldset>
+		</div>
+			
+		<div id="playerStatus" style="display:none">
+			<input id="stat0" type="text" name="0" value='0'>
+			<input id="stat1" type="text" name="1" value='0'>
+			<input id="stat2" type="text" name="2" value='0'>
+			<input id="stat3" type="text" name="3" value='0'>
+			<input id="playerStatusScore0" type="text" name="s0=" value='0'>
+			<input id="playerStatusScore1" type="text" name="s1=" value='0'>
+			<input id="playerStatusScore2" type="text" name="s2=" value='0'>
+			<input id="playerStatusScore3" type="text" name="s3=" value='0'>
+			<input id="round" type="text" name="rnd" value='0'>
+		</div>
+
+		<div id="log" class="showlog hide">
+			<fieldset class="truelog">
+				<div id="showLog"></div>
+			</fieldset>
+		</div>
+
+		<div id="logpage" class="flog hide">
+			<fieldset class="logfield">
+				 <div id="fullLog"></div>
+				 <input class="ok-stat" id="backS" type="button" value="Окай"> 
+			</fieldset>
+		</div>
+		
+		<div id="inpFanGroup" class="inpResGroup hide"></div>
+		<div id="inpFan" class="inpRes hide"></div>
+		<div id="inpStat" class="inpStatAss hide"></div>
+		<div id="inpStatf" class="Ass hide"></div>
+		<div id="inpStatl" class="Assl hide"></div>
+		
+		<input id="inp" class="inpresult hide" type="number" name="result=" value="" placeholder="Вноси">
+		
+		<input id="refrL" class="lobby-refr hide" type="button" value="Обновить">
+		<input class="butters refresh hide" id="refrG" type="button" value="Обновить">
+		<input class="lobby-refr hide" id="refrL" type="button" value="Обновить">
+		
+		<input class="cs hide" id="cancelScore" type="button" value="Отменить">
+		<input class="sc hide" id="fullScore" type="button" value="Подтвердить">
+		<input class="butters start-send hide" id="startG" type="button" value="Начать">
+		<input class="butters shuf-enter hide" id="shufflG" type="button" value="Перемешать">
+		<input class="butters back-lobby hide" id="tolobbyG" type="button" value="К столам">
+		<input class="butters start-send hide" id="sendG" type="button" value="Внести">
+		<input class="butters start-send hide" id="endG" type="button" value="Закончить">
+		<input class="butters back-lobby hide" id="penalG" type="button" value="Штраф">
+		<input class="butters shuf-enter hide" id="noneG" type="button" value="Ничья">
+		<input class="back-stat hide" id="backG" type="button" value="Вернуть">
+		<script async src="script.js" type="application/javascript"></script>
+
+	</body>
+</html>
